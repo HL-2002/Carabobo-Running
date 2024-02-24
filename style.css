@@ -1,0 +1,31 @@
+/* Body styling*/
+body {
+    margin: 0px;
+}
+
+/* nav var */
+nav {
+    background-color: #ed8048;
+    box-shadow: 0px 0px  10px rgba(0, 0, 0, 0.5);
+}
+
+a {
+    background-color: aliceblue;
+}
+
+#isologo {
+    width: 15rem;
+}
+
+menu {
+    background-color: antiquewhite;
+    display: flex;
+    width: 80%;
+    list-style: none;
+}
+
+/* main */
+#banner {
+    width: 100%;
+}
+
