@@ -1,16 +1,25 @@
 main {
-    justify-content: space-around;
+    margin-left: 20%;
+    text-align: center;
 }
 
+
+
 section {
-    text-align: center;
-    width: 40%;
+    width: 60%;
     background-color: #f9fafb;
     margin: 2rem;
     padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    transform: skewX(-10deg);
+}
+
+section * {
+    transform: skewX(4deg);
 }
 
 h1 {
+    width: 100%;
     margin-top: 0;
     font-size: 2rem;
     font-family: "Lato", sans-serif;
@@ -19,4 +28,55 @@ h1 {
     font-style: normal;
     font-variation-settings:
       "wdth" 100;
+}
+
+form {
+    display:table;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.input {
+    font-family: "Lato", sans-serif;
+    display: table-row;
+}
+
+label, input, select {
+    display: table-cell;
+    margin: 0.5rem;
+
+}
+
+#submit {
+    display: box;
+    width: 8rem;
+    margin: 1.2rem;
+    margin-left: 60%;
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    transform: skewX(-5deg);
+    background-color: #ed8048;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    border-style: none;
+    box-shadow: 0px 0px 10px rgb(0,0,0,0.2);
+    text-decoration: none;
+    color: white;
+}
+
+#submit:hover {
+    background-color: #004aad;
+    
+    transition: 
+        background-color 500ms,
+        color 500ms;
+
+    color:#ed8048;
+    transition:
+        color 500ms;
+}
+
+#submit:active {
+    transform: scale(0.8) skewX(-10deg);
+    transition:all 1000ms;
 }
