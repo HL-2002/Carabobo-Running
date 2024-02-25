@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registro</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/registro.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body lang="es">
+        <nav>
+        <a href="index.html"> 
+                <img src="/resources/isologo.png" alt="TRIATHON" id="isologo">
+            </a>
+            <a href="competencia.html" class="item"> COMPETENCIA </a>
+            <a href="registro.html" class="item"> REGISTRO </a>
+        </nav>
+        <main>
+            <section>
+                <h1>TRIATHLON 10-10-30</h1>
+                <form action="/php/registro.php" method="post">
+                    <div class="input">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="input">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" name="apellido" required>
+                    </div>
+                    <div class="input">
+                        <label for="cedula">Cédula</label>
+                        <input type="text" id="cedula" name="cedula" required>
+                    </div>
+                    <div class="input">
+                        <label for="correo">Correo</label>
+                        <input type="email" id="correo" name="correo" required>
+                    </div>
+                    <div class="input">
+                        <label for="telefono">Teléfono</label>
+                        <input type="text" id="telefono" name="telefono" required>
+                    </div>
+                    <div class="input">
+                        <label for="fecha">Fecha de nacimiento</label>
+                        <input type="date" id="fecha" name="fecha" required>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <div id="container">
+                <img src="/resources/carabobo_te_quiero.png" id="carabobo">
+                <div id="redes">
+                    <p>Síguenos en nuestras redes sociales</p>
+                    <a href="https://www.instagram.com/lacava10oficial/?hl=en" target="_blank">
+                        <img src="/resources/instagram.png" class="social">
+                    </a>
+                    <a href="https://www.facebook.com/Lacava10oficial/?locale=es_LA" target="_blank">
+                        <img src="/resources/facebook.png" class="social">
+                    </a>
+                    <a href="https://twitter.com/rafaellacava10?lang=en" target="_blank">
+                        <img src="/resources/twitter.png" class="social">
+                    </a>
+                </div>
+            </div>
+            
+            <p>© 2024 Triathlon de Puerto Cabello. Todos los derechos reservados.</p>
+        </footer>
+    </body>
+</html>

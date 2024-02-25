@@ -1,0 +1,22 @@
+main {
+    justify-content: space-around;
+}
+
+section {
+    text-align: center;
+    width: 40%;
+    background-color: #f9fafb;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 2rem;
+    font-family: "Lato", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
