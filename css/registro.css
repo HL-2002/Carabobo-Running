@@ -44,6 +44,14 @@ form {
 label, input, select {
     display: table-cell;
     margin: 0.5rem;
+    font-size: 1rem;
+}
+
+div input{
+    padding: 0.2rem;
+    border-style: solid;
+    border-color:#edeff0;
+    border-radius: 5px;
 
 }
 
@@ -66,13 +74,10 @@ label, input, select {
 
 #submit:hover {
     background-color: #004aad;
+    color:#ed8048;
     
     transition: 
         background-color 500ms,
-        color 500ms;
-
-    color:#ed8048;
-    transition:
         color 500ms;
 }
 

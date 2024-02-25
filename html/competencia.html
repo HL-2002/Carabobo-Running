@@ -19,7 +19,30 @@
             <a href="registro.html" class="item"> REGISTRO </a>
         </nav>
         <main>
-            <p> aquí va lo de la competencia</p>
+            <section id="ini">   
+                <div id="input">
+                    <h2> Identificación</h2>
+                    <input type="number" placeholder="Cédula" min="0">
+                    <input type="submit" value="Presente" class="submit">
+                </div>
+                <div id="input">
+                    <h2> Inicio</h2>
+                    <input type="time">
+                    <input type="submit" value="Iniciar" class="submit">
+                </div>
+            </section>
+            <section id="participante">
+                <h2> Participante</h2>
+                <p> (Nombre)</p>
+                <div>
+                    <input type="range" min="0" max="100" value="0" id="maraton" disabled>
+                    <input type="range" min="0" max="100" value="0" id="nado" disabled> 
+                    <input type="range" min="0" max="100" value="0" id="ciclismo" disabled>
+                </div>
+            </section>
+            <section> <!-- TODO: Sección de competencia -->
+                <h2> Competencia</h2>
+            </section>
         </main>
         <footer>
             <div id="container">
