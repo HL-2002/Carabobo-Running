@@ -6,7 +6,7 @@ const form = document.getElementById('form');
 form.addEventListener('submit', (e)=>{
     e.preventDefault()
 const data = new FormData(form);
-const person =  JSON.parse(localStorage.getItem('records'));
+const person =  JSON.parse(localStorage.getItem('records') ?? '[]');
 
 const Exist = person.find(person => person.cedula == data.get('cedula'));
 
