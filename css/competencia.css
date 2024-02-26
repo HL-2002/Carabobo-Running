@@ -39,6 +39,15 @@ input {
     color: white;
 }
 
+.submit[disabled] {
+    background-color: #edeff0;
+    color: #004aad;
+    cursor: not-allowed;
+}
+
+
+
+
 .submit:hover {
     background-color: #004aad;
     color:#ed8048;
@@ -61,6 +70,12 @@ input {
 #participante div {
     background-color: #ed8048;
     border-radius: 20px;
+}
+
+#participante select{
+    margin: 20px;
+    padding: 5px;
+    font-size: 16px;
 }
 
 p {
@@ -125,4 +140,35 @@ input::-moz-slider-thumb {
 
 #ciclismo::-moz-slider-thumb {
     background-image: url("/resources/bike.png");
+}
+
+
+/* tabla style */
+
+.table-container{
+padding: 15px;
+}
+
+.table {
+    margin: auto;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    background-color: white;
+    width: 100%;
+    
+}
+
+.table th {
+    background-color: #004aad;
+    color: white;
+    padding: 0.5rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.25rem;
+}
+
+.table td {
+    padding: 0.5rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.25rem;
+    text-align: center;
 }
