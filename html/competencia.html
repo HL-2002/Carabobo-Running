@@ -9,6 +9,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="/js/competencia.js"></script>
     </head>
     <body lang="es">
         <nav>
@@ -22,26 +23,73 @@
             <section id="ini">   
                 <div id="input">
                     <h2> Identificación</h2>
-                    <input type="number" placeholder="Cédula" min="0">
-                    <input type="submit" value="Presente" class="submit">
+                   <select name="idpeople" id="idpeople"></select>
+                    <input type="submit" value="Presente" id="presente" class="submit">
                 </div>
                 <div id="input">
                     <h2> Inicio</h2>
-                    <input type="time">
-                    <input type="submit" value="Iniciar" class="submit">
+                    <input id="time" type="time">
+                    <input id="time-submit" type="submit" value="Iniciar" class="submit">
                 </div>
             </section>
             <section id="participante">
                 <h2> Participante</h2>
-                <p> (Nombre)</p>
+                 <select name="people" id="people"></select>
                 <div>
-                    <input type="range" min="0" max="100" value="0" id="maraton" disabled>
-                    <input type="range" min="0" max="100" value="0" id="nado" disabled> 
-                    <input type="range" min="0" max="100" value="0" id="ciclismo" disabled>
+                    <input type="range" min="0" max="10" value="0" id="maraton" disabled>
+                    <input type="range" min="0" max="10" value="0" id="nado" disabled> 
+                    <input type="range" min="0" max="30" value="0" id="ciclismo" disabled>
                 </div>
             </section>
-            <section> <!-- TODO: Sección de competencia -->
+            <section class="table-container"> <!-- TODO: Sección de competencia -->
                 <h2> Competencia</h2>
+            <table class="table">
+
+                <!-- make a table head -->
+                
+            
+
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+    
+                        <th colspan="2" ski>caminata</th>
+                        <th colspan="2">natacion</th>
+                        <th colspan="2">Ciclismo</th>
+                        <th></th>
+                    </tr>
+                    <th>Nombre</th>
+                    <th>Cedula</th>
+                    <th>municipio</th>
+                    <th>edad</th>
+                    <th>inicio</th>
+                    <th>fin</th>
+                    <th>inicio</th>
+                    <th>fin</th>
+                    <th>inicio</th>
+                    <th>fin</th>
+                    <th>Tiempo total</th>
+                    <th>distancia total</th>
+
+
+                  
+                </thead>
+
+
+                <!-- make a table body -->
+                <tbody id="body">
+
+
+                </tbody>
+
+
+
+            </table>
+
+
             </section>
         </main>
         <footer>
