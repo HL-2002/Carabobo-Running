@@ -14,6 +14,13 @@ section {
     margin: 2rem;
 }
 
+em {
+    background:linear-gradient(90deg, rgba(0,74,173,1) 10%, rgba(237,128,72,1) 90%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
 .seccion {
     background-color: #f9fafb;
     width: 30%;
@@ -85,7 +92,7 @@ h2 {
     animation: increase 500ms forwards;
 }
 
-section:hover {
+#competencias:hover {
     animation: incline 500ms forwards;
 }
 
