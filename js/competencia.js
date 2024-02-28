@@ -3,6 +3,10 @@ const table = document.getElementById('body');
 const peopleSelect = document.getElementById('people');
 const dataTime  = document.getElementById('time');
 const btnInicio = document.getElementById('time-submit');
+
+const formTime = document.getElementById('input-time');
+
+
 const btnPresent = document.getElementById('presente');
 const selectPresent = document.getElementById('idpeople');
 const maraton = document.getElementById('maraton');
@@ -51,6 +55,11 @@ makePresent(peoplePresent);
 btnPresent.addEventListener('click', (e) => {
 
 const cedula = selectPresent.value;
+if (cedula == "" || cedula == undefined){
+    return;
+}
+try{
+
 
 const peopleArray = JSON.parse(localStorage.getItem('records'));
 const personselected = peopleArray.find (person => person.cedula == cedula);
@@ -65,6 +74,9 @@ localStorage.setItem('race', JSON.stringify(peopleisPresent));
 const peoplePresent =  peopleArray.filter(person => person.presente == false);
 selectPresent.innerHTML = '';
 makePresent(peoplePresent);
+}catch(e){
+    console.log(e);
+}
 
 })
 
@@ -72,16 +84,21 @@ makePresent(peoplePresent);
 
 
 // start the race
-btnInicio.addEventListener('click', (e) => {
+formTime.addEventListener('submit', (e) => {
+    e.preventDefault()
+    
+    const initialArray = JSON.parse(localStorage.getItem('race')) ?? [];
+
+    if (initialArray.length == 0){
+        return;
+    }
+
 
     btnPresent.disabled = true;
     selectPresent.disabled = true;
     btnInicio.disabled = true;
     dataTime.disabled = true;
 
-
-
-    const initialArray = JSON.parse(localStorage.getItem('race')) ?? [];
 
     peopleSelect.innerHTML = '';
     
