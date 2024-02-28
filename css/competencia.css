@@ -109,15 +109,15 @@ input::-webkit-slider-thumb {
 }
 
 #maraton::-webkit-slider-thumb {
-    background-image: url("/resources/run.png");
+    background-image: url("/resources/run.webp");
 }
 
 #nado::-webkit-slider-thumb {
-    background-image: url("/resources/swim.png");
+    background-image: url("/resources/swim.webp");
 }
 
 #ciclismo::-webkit-slider-thumb {
-    background-image: url("/resources/bike.png");
+    background-image: url("/resources/bike.webp");
 }
 
 input::-moz-slider-thumb {
@@ -131,15 +131,15 @@ input::-moz-slider-thumb {
 }
 
 #maraton::-moz-slider-thumb {
-    background-image: url("/resources/run.png");
+    background-image: url("/resources/run.webp");
 }
 
 #nado::-moz-slider-thumb {
-    background-image: url("/resources/swim.png");
+    background-image: url("/resources/swim.webp");
 }
 
 #ciclismo::-moz-slider-thumb {
-    background-image: url("/resources/bike.png");
+    background-image: url("/resources/bike.webp");
 }
 
 
