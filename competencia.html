@@ -6,15 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/css/style.css">
         <link rel="stylesheet" href="/css/competencia.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="/js/competencia.js"></script>
     </head>
     <body lang="es">
         <nav>
             <a href="index.html"> 
-                <img src="/resources/isologo.png" alt="TRIATHON" id="isologo">
+                <img src="/resources/isologo.webp" alt="TRIATHON" id="isologo">
             </a>
             <a href="competencia.html" class="item"> COMPETENCIA </a>
             <a href="registro.html" class="item"> REGISTRO </a>
@@ -26,11 +23,11 @@
                    <select name="idpeople" id="idpeople"></select>
                     <input type="submit" value="Presente" id="presente" class="submit">
                 </div>
-                <div id="input">
+                <form id="input-time">
                     <h2> Inicio</h2>
-                    <input id="time" type="time">
-                    <input id="time-submit" type="submit" value="Iniciar" class="submit">
-                </div>
+                    <input id="time" type="time" min="05:00" max="17:00" required>
+                    <input id="time-submit" type="submit" value="Iniciar"  class="submit">
+                </form>
             </section>
             <section id="participante">
                 <h2> Participante</h2>
@@ -95,17 +92,17 @@
         </main>
         <footer>
             <div id="container">
-                <img src="/resources/carabobo_te_quiero.png" id="carabobo">
+                <img src="/resources/carabobo_te_quiero.webp" id="carabobo">
                 <div id="redes">
                     <p>Síguenos en nuestras redes sociales</p>
                     <a href="https://www.instagram.com/lacava10oficial/?hl=en" target="_blank">
-                        <img src="/resources/instagram.png" class="social">
+                        <img src="/resources/instagram.webp" class="social">
                     </a>
                     <a href="https://www.facebook.com/Lacava10oficial/?locale=es_LA" target="_blank">
-                        <img src="/resources/facebook.png" class="social">
+                        <img src="/resources/facebook.webp" class="social">
                     </a>
                     <a href="https://twitter.com/rafaellacava10?lang=en" target="_blank">
-                        <img src="/resources/twitter.png" class="social">
+                        <img src="/resources/twitter.webp" class="social">
                     </a>
                 </div>
             </div>
