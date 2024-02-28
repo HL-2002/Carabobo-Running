@@ -38,7 +38,11 @@ const people = {
 const localdata = localStorage.getItem('records');
 let records = [];
 if(localdata){
+    try{
     records = JSON.parse(localdata);
+    }catch(e){
+        records = [];
+    }
 }
 records.push(people);
 localStorage.setItem('records', JSON.stringify(records));
