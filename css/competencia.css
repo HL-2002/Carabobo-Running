@@ -120,7 +120,7 @@ input::-webkit-slider-thumb {
     background-image: url("/resources/bike.webp");
 }
 
-input::-moz-slider-thumb {
+input::-moz-range-thumb {
     appearance:none;
     width: 3rem;
     height: 3rem;
@@ -128,17 +128,18 @@ input::-moz-slider-thumb {
     background-position: center center;
     background-repeat: no-repeat;
     cursor: pointer;
+    border-radius: 999px;
 }
 
-#maraton::-moz-slider-thumb {
+#maraton::-moz-range-thumb {
     background-image: url("/resources/run.webp");
 }
 
-#nado::-moz-slider-thumb {
+#nado::-moz-range-thumb {
     background-image: url("/resources/swim.webp");
 }
 
-#ciclismo::-moz-slider-thumb {
+#ciclismo::-moz-range-thumb {
     background-image: url("/resources/bike.webp");
 }
 
